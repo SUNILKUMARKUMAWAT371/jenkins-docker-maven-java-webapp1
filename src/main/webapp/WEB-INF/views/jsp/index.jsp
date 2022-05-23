@@ -40,15 +40,15 @@
 
 	<div class="row">
 		<div class="col-md-8">
-			<h2>Welcome To LinuxWorld, India</h2>
-			<h3>Contact training@lwindia.com or mob 9351009002</h3>
+			<h2>Welcome To DevOps</h2>
+			<h3>Contact dev*******@.com or mob 8740******</h3>
 		</div>	
 	</div>
 
 
 	<hr>
 	<footer>
-		<p>&copy; LW 2022</p>
+		<p>&copy; DevOps 2022</p>
 	</footer>
 </div>
 
