@@ -40,7 +40,7 @@
 
 	<div class="row">
 		<div class="col-md-8">
-			<h2>Welcome To DevOps</h2>
+			<h2>Welcome To DevOps, India</h2>
 			<h3>Contact dev*******@.com or mob 8740******</h3>
 		</div>	
 	</div>
