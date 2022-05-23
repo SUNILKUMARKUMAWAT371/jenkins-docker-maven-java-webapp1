@@ -48,7 +48,7 @@ pipeline {
         stage('Deploy webAPP in DEV Env') {
             steps {
                 sh 'sudo docker rm -f myjavaapp'
-                sh "sudo docker run  -d  -p  8080:8080 --name myjavaapp   suninlkumawat/javaweb:${BUILD_TAG}"
+                sh "sudo docker run  -d  -p  8080:8080 --name myjavaapp   sunilkumawat/javaweb:${BUILD_TAG}"
                 //sh 'whoami'
             }
             
@@ -61,7 +61,7 @@ pipeline {
                sshagent(['QA_ENV_SSH_CRED']) {
     
                     sh "ssh  -o  StrictHostKeyChecking=no ec2-user@13.233.109.137 sudo docker rm -f myjavaapp"
-                    sh "ssh ec2-user@13.233.109.137 sudo docker run  -d  -p  8080:8080 --name myjavaapp   suninlkumawat/javaweb:${BUILD_TAG}"
+                    sh "ssh ec2-user@13.233.109.137 sudo docker run  -d  -p  8080:8080 --name myjavaapp   sunilkumawat/javaweb:${BUILD_TAG}"
                 }
 
             }
@@ -109,7 +109,7 @@ pipeline {
                sshagent(['QA_ENV_SSH_CRED']) {
     
                     sh "ssh  -o  StrictHostKeyChecking=no ec2-user@13.233.43.85 sudo docker rm -f myjavaapp"
-                    sh "ssh ec2-user@13.233.43.85 sudo docker run  -d  -p  8080:8080 --name myjavaapp   suninlkumawat/javaweb:${BUILD_TAG}"
+                    sh "ssh ec2-user@13.233.43.85 sudo docker run  -d  -p  8080:8080 --name myjavaapp   sunilkumawat/javaweb:${BUILD_TAG}"
                 }
 
             }
