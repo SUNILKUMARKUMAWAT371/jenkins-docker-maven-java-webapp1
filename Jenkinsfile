@@ -39,7 +39,7 @@ pipeline {
                  sh "sudo docker login -u sunilkumawat -p $DOCKER_HUB_PASS_CODE"
 }
                
-               sh "sudo docker push suninlkumawat/javaweb:${BUILD_TAG}"
+               sh "sudo docker push sunilkumawat/javaweb:${BUILD_TAG}"
             }
             
         }
