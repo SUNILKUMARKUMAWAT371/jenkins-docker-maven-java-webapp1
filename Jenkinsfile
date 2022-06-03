@@ -126,5 +126,12 @@ pipeline {
         
     }
     
+    post {
+        success {
+            mail to: 'sunilkumarkumawat371@gmail.com',
+            subject: "sucess Pipeline",
+            body: "Something is very fantastic"
+        }
+    }
     
 }
