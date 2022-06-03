@@ -76,8 +76,14 @@ pipeline {
                }
             }
         }
-          
-         
+        
+        /*
+         stage('approved') {
+            steps {
+                input(message: "Release to Prod...?")
+            }
+        }
+         */
          
          
         stage('approved') {
